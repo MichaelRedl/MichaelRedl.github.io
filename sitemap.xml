@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://leanforms.eu/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://leanforms.eu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://leanforms.eu/index-eng.html" />
+  </url>
+  <url>
+    <loc>https://leanforms.eu/index-eng.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://leanforms.eu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://leanforms.eu/index-eng.html" />
+  </url>
+</urlset>
