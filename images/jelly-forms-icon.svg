@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none">
+  <title>Jelly Forms - jellyfish form icon</title>
+  <rect x="4" y="4" width="88" height="88" rx="22" fill="#2563eb"/>
+  <path d="M32 51V59C32 65 27 65 27 72 M48 51V76 M64 51V59C64 65 69 65 69 72" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <path d="M24 49C24 33 34 20 48 20C62 20 72 33 72 49C72 52 70 54 67 54H29C26 54 24 52 24 49Z" fill="white"/>
+  <rect x="36" y="34" width="5" height="5" rx="1.5" fill="#2563eb"/>
+  <rect x="46" y="35" width="14" height="3" rx="1.5" fill="#2563eb"/>
+  <rect x="36" y="44" width="5" height="5" rx="1.5" fill="#2563eb"/>
+  <rect x="46" y="45" width="10" height="3" rx="1.5" fill="#2563eb"/>
+</svg>
