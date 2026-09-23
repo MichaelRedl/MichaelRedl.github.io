@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jelly Forms Privacy Policy | Michael Redl</title>
+<meta name="description" content="How Jelly Forms processes SharePoint form data, user information, PDF exports, third-party requests and support enquiries.">
+<meta name="author" content="Michael Redl">
+<link rel="canonical" href="https://jellyforms.com/privacy.html">
+<link rel="icon" type="image/svg+xml" href="images/jelly-forms-icon.svg">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/privacy.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to privacy policy</a>
+<header class="site-header"><div class="container privacy-nav"><a class="brand" href="index-eng.html"><img src="images/jelly-forms-icon.png" alt="" width="40" height="40"><span>Jelly Forms</span></a><nav aria-label="Main navigation"><a href="index-eng.html">Back to website</a><a href="index.html" lang="de">Deutsche Website</a></nav></div></header>
+<main id="main-content" class="container privacy-main">
+<article>
+<p class="eyebrow">Jelly Forms · Privacy</p>
+<h1>Privacy policy</h1>
+<p class="privacy-date">Last updated: <time datetime="2026-09-23">23 September 2026</time></p>
+<p class="privacy-lead">This policy covers the <strong>Jelly Forms SharePoint Framework app</strong>, the Jelly Forms website and enquiries sent to its publisher. Jelly Forms lets organisations design and use SharePoint list forms, configure rules and repeating sections, and export forms to PDF.</p>
+<aside class="privacy-summary" aria-label="At a glance"><strong>At a glance</strong><p>Saved form content and designs stay in your organisation’s SharePoint environment. PDF generation runs in your browser. PnP control telemetry and configured external images can make third-party requests. Contact-form submissions and support emails are sent to the publisher separately.</p></aside>
+<nav class="privacy-contents" aria-label="Policy contents"><a href="#publisher">Publisher and responsibilities</a><a href="#app-data">Information processed by the app</a><a href="#storage">Storage and PDF exports</a><a href="#third-parties">Telemetry and external services</a><a href="#website-support">Website and support</a><a href="#retention">Retention and deletion</a><a href="#rights">Your privacy rights</a></nav>
+
+<section id="publisher"><h2>1. Publisher and responsibilities</h2>
+<p>Jelly Forms is developed and published by <strong>Michael Redl</strong>. For privacy questions or requests, email <a href="mailto:m.redl@michael-redl.com?subject=Jelly%20Forms%20privacy">m.redl@michael-redl.com</a>. The publisher’s website is <a href="https://michael-redl.com/">michael-redl.com</a>.</p>
+<p>Your organisation determines which information its SharePoint forms collect, why it is used, who may access it and how long it is kept. Contact your organisation for questions about information entered in its forms. Michael Redl is responsible for handling enquiries and personal information you send directly to him; installing Jelly Forms does not give him access to your tenant or list items.</p></section>
+
+<section id="app-data"><h2>2. Information processed by the app</h2>
+<p>Depending on the form configuration and your SharePoint permissions, Jelly Forms reads and processes:</p>
+<ul><li>SharePoint site, list and content-type identifiers, column definitions, choice and lookup options, existing item values and permission information.</li><li>Values you enter or edit, including text, dates, numbers, currency, choices, links, rich text, selected people and repeating-section rows. These values may contain personal information chosen by your organisation.</li><li>The signed-in user’s display name and email address for user-based rules, and names, email addresses, login names or user identifiers needed to search, display and save people fields.</li><li>Form designs, labels, descriptions, formatting, rules, custom content and image addresses configured by designers.</li></ul>
+<p>This information is used to display forms, validate input, apply configured rules, resolve people and lookup fields, save items and publish designs. Requests use the current Microsoft 365 session and relevant SharePoint permissions. Jelly Forms does not request a separate password or create a publisher account.</p>
+<p>Rules can automatically change field values, visibility, required status, colours or editability. Your organisation controls those rules and their use in its business processes; they are not a publisher-operated profiling or scoring service.</p></section>
+
+<section id="storage"><h2>3. Storage and PDF exports</h2>
+<p>Saved values are written to the customer’s SharePoint list. Repeating rows are serialised into the configured SharePoint storage column. Published designs and rules are stored in the site’s configuration list, internally named <code>LeanFormsConfiguration</code>; older configurations may be read from <code>LeanFormsConfigList</code>. These legacy technical names do not refer to another service.</p>
+<p>The app’s own form-save and design-publish operations do not upload those values or designs to Michael Redl’s servers. Microsoft hosts and processes the customer’s Microsoft 365 data under the customer’s arrangements with Microsoft. Other tenant tools, administrators, retention policies and integrations may also act on that data.</p>
+<p>Unsaved input is held in the current browser form. The app can write list identifiers to browser session storage; it does not use that cache as a separate store for submitted form values. Browser and Microsoft 365 platform storage may also be used by the surrounding services.</p>
+<p>PDF export captures the displayed form, including current unsaved values, and generates a downloadable PDF locally in the browser using bundled libraries. It does not send the form to an external PDF conversion service. Exporting may fetch configured images again. Downloads, device backups, browser download settings and any subsequent sharing are controlled by you and your organisation.</p></section>
+
+<section id="third-parties"><h2>4. Telemetry, external images and other services</h2>
+<p><strong>PnP control telemetry.</strong> The current app includes PnP React controls for date/time and people fields. Their default usage telemetry is not disabled by Jelly Forms. These controls can send events to <code>https://pnptelemetryproxy.azurewebsites.net/track</code>, including the control name, library version, environment/debug flags and control-configuration flags. The inspected event payloads do not include entered form values, selected people’s details or the signed-in user’s name or email. As with network requests generally, the receiving service can receive technical connection information such as an IP address. This is a PnP service, not a Jelly Forms form-data store. See the <a href="https://pnp.github.io/sp-dev-fx-controls-react/#telemetry">PnP telemetry documentation</a>.</p>
+<p><strong>External content.</strong> Designers can configure externally hosted images or content with external image references. Loading a form or exporting a PDF can contact those hosts, revealing request information such as an IP address, browser information and, depending on browser policy, a referrer. A configured URL can itself contain information. Following an external link also contacts its destination. Your organisation should choose appropriate content hosts.</p>
+<p><strong>Microsoft services.</strong> SharePoint, people lookup, authentication, platform diagnostics and Microsoft-hosted assets are subject to Microsoft 365 and tenant settings. These services can process technical and user information independently of Jelly Forms. See <a href="https://privacy.microsoft.com/privacystatement">Microsoft’s privacy statement</a> and your organisation’s Microsoft agreements.</p>
+<p>Jelly Forms does not add a separate publisher-operated advertising or behavioural analytics service to the app. This does not mean that the Microsoft platform, PnP telemetry or external content hosts make no requests.</p></section>
+
+<section id="website-support"><h2>5. Website, contact form and support emails</h2>
+<p>The public website is hosted using GitHub Pages. The hosting service receives technical website-request information, such as an IP address and requested page, to deliver and protect the site. Its handling is described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>. The website’s own code does not add advertising cookies or an analytics tracker.</p>
+<p>When you submit the website contact form, your first name, last name, company, telephone number, email address, subject and message are sent over HTTPS to the publisher’s existing Microsoft Azure Functions contact endpoint at <code>websiteform.azurewebsites.net/api/HttpTrigger2</code>. This is separate from data entered into SharePoint forms. The form sends these fields when you submit, not simply when you visit the page.</p>
+<p>Contact-form submissions are delivered to Michael Redl’s mailbox. The contact function does not keep a separate copy of submissions in a database or application log; the retained message is the email in the mailbox. Hosting and delivery services may still process technical connection and delivery information.</p>
+<p>If you email support, Michael Redl receives your email address, message and any attachments or other information you choose to include. This information is used to respond, investigate the issue and manage the enquiry. Please send only information needed for your enquiry and remove unnecessary personal or confidential information from screenshots, exported PDFs and diagnostics. Some app diagnostic paths can write values or technical details to your browser console; inspect logs before sharing them.</p>
+<p>Where applicable, handling an enquiry is based on the legitimate interest in responding and supporting the product, or on taking requested steps towards or performing a contract. Records may also be retained where a legal obligation requires this. Your organisation determines the legal basis for information collected through its SharePoint forms.</p></section>
+
+<section id="retention"><h2>6. Retention, deletion and recipients</h2>
+<p><strong>SharePoint data:</strong> your organisation controls retention and deletion through its Microsoft 365 policies, list administration, recycle bins and backups. Removing the Jelly Forms app does not automatically delete list items, stored repeating rows, published configurations or downloaded PDFs. Ask your administrator to handle deletion of those records and configuration lists where appropriate.</p>
+<p><strong>Browser data and PDFs:</strong> session storage normally lasts for the browser tab’s session and can be cleared through browser controls. Browser session restoration may affect that lifetime. Delete downloaded PDFs and any shared or backed-up copies using the relevant device or service controls.</p>
+<p><strong>Enquiries:</strong> contact messages and support correspondence are kept for the period needed to handle the enquiry and related follow-up, subject to applicable legal record-keeping requirements. You can ask Michael Redl about retention or request deletion using the contact address below. Retention in hosting, email, telemetry and backup services also depends on the applicable provider and service configuration.</p>
+<p>Recipients may include your organisation’s authorised users and administrators, Microsoft for SharePoint or Azure services, the email services used for your enquiry, GitHub for website hosting, PnP’s telemetry service and any external hosts selected in the form design. Those services may process information in countries other than your own. The applicable Microsoft 365 agreements, provider terms and safeguards govern their processing and international transfers; the app does not itself select a new storage region for your SharePoint data.</p></section>
+
+<section id="rights"><h2>7. Privacy requests and your choices</h2>
+<p>Depending on applicable law, you may have rights to access, correct or erase personal information, restrict processing, object to processing, receive portable data, and withdraw consent where processing relies on it. You may also complain to a competent data-protection supervisory authority.</p>
+<p>For information in your organisation’s SharePoint forms, contact that organisation or its administrator. For enquiries and information held by the publisher, email <a href="mailto:m.redl@michael-redl.com?subject=Jelly%20Forms%20privacy">m.redl@michael-redl.com</a> with the subject “Jelly Forms privacy”. Explain the request and provide enough context to locate the relevant correspondence. Identity may need to be verified before information is disclosed or changed.</p>
+<p>This policy may be updated to reflect changes to Jelly Forms or its data handling. The date at the top identifies the latest revision.</p></section>
+</article>
+</main>
+<footer class="site-footer"><div class="container privacy-footer"><span>Jelly Forms · Michael Redl</span><a href="index-eng.html#contact">Contact the developer</a><a href="#main-content">Back to top</a></div></footer>
+</body>
+</html>
